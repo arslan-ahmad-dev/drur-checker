@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://toolsmandi.com/bar/v4/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://ahrefs\\.com/v4/(.*)",
+      "resourceTypes": ["xmlhttprequest", "other", "main_frame", "sub_frame"]
+    }
+  }
+]

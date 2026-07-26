@@ -1,0 +1,5 @@
+wheel
+setuptools
+playwright
+fastapi[all]
+python-dotenv
