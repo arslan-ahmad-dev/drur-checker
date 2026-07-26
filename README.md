@@ -1,4 +1,4 @@
-# drur-tool
+# DRUR CHECKER
 
 DR / UR / Organic-traffic checker. Takes a list of domains and returns each
 domain's Domain Rating, URL Rating and Organic traffic, read from the **Ahrefs
@@ -38,7 +38,7 @@ Fill `BAR_USERNAME` / `BAR_PASSWORD` in `.env`.
 ## Run
 
 ```bash
-python main.py            # serves on 0.0.0.0:3242
+python main.py
 ```
 
 ## API
@@ -46,7 +46,7 @@ python main.py            # serves on 0.0.0.0:3242
 `POST /drur` — form field **`domains`** (comma-separated), nothing else.
 
 ```bash
-curl -X POST http://localhost:3242/drur -d "domains=ft.com,bbc.com"
+curl -X POST http://localhost:8000/drur -d "domains=ft.com,bbc.com"
 ```
 
 ```json
